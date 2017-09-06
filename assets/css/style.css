@@ -1,0 +1,17 @@
+body {
+	background-image: url(../images/background.jpg);
+	background-size:cover;
+	color:white;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.game {
+	margin-top: 20px;
+	text-align: center;
+	border: solid;
+	border-width: 3px;
+	border-color: white;
+}
+hr {
+	color: white;
+}
