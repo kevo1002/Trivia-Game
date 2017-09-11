@@ -15,3 +15,11 @@ body {
 hr {
 	color: white;
 }
+
+#quiz {
+	visibility: hidden;
+}
+#sButton{
+	visibility: hidden;
+	text-align: center;
+}

@@ -4,7 +4,8 @@
 		<meta charset="utf-8"/>
 		<meta http-equiv="x-ua-compatible" content="ie=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous"/>		
+		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<title>Trivia Game</title>
@@ -13,16 +14,54 @@
 		<div class="container">
 			<div class = "container game">
 				<h1>Trivia Game</h1>
-			<hr>
+			<br>
 				<div class = "container game-content">
 					<div class="timer"></div>
-					<div class="question"></div>
-					<div class="choices"></div>
-					<div class="notice"></div>
+					<div> <button type = "button" class="btn btn-primary startButton">Start Game</button>
+					</div>
+					<hr>
+				
+					<div id="quiz" name ="quiz">
+						<div id= "question1">
+				   	 	<h3>What is the square root of 25?</h3>
+				    	<input class="answer" type="radio" name="question1" value="2">2<br>
+				   		<input class="answer" type="radio" name="question1" value="3">3<br>
+				   		<input class="answer" type="radio" name="question1" value="5">5<br>
+				    	<input class="answer" type="radio" name="question1" value="1">1<br>
+						</div>
+						<hr>
+
+						<div id= "question2">
+				    	<h3>What is 44 divided by 4?</h3>
+				    	<input class="answer" type="radio" name="question2" value="11">11<br>
+				    	<input class="answer" type="radio" name="question2" value="12">12<br>
+				    	<input class="answer" type="radio" name="question2" value="15">15<br>
+				    	<input class="answer" type="radio" name="question2" value="16">16<br>
+						</div>
+						<hr>
+	
+						<div id= "question3">
+				    	<h3>What is 11 cubed?</h3>
+				    	<input class="answer" type="radio" name="question3" value="1433">1433<br>
+				    	<input class="answer" type="radio" name="question3" value="1771">1771<br>
+				    	<input class="answer" type="radio" name="question3" value="1331">1331<br>
+				    	<input class="answer" type="radio" name="question3" value="1211">1211<br>
+				    	</div>
+				    	<hr>
+
+
+					</div>
+					<p id = "message"></p>
+					</div>
+
+				</div>
+
+				<div id =sButton> <button type = "button" class="btn btn-primary submitButton">Submit</button>
 				</div>
 
 			</div>
 		</div>
+
 		<script src="assets/javascript/logic.js"></script>
 	</body>
 </html>
